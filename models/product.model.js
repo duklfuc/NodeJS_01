@@ -9,9 +9,9 @@ const productSchema = new mongoose.Schema(
       Stock: Number,
       thumbnail: String,
       status: String,
-      position: String,
+      position: Number,
       deleted: Boolean
   });
-const Product = mongoose.model('Product', productSchema, "products");
+const Product = mongoose.model("Product", productSchema, "products");
 
 module.exports = Product;
